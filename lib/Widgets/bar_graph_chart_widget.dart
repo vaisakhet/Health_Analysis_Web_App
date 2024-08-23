@@ -16,8 +16,8 @@ class BarGraphCart extends StatelessWidget {
       itemCount: bargraphData.data.length,
       shrinkWrap: true,
       physics: const ScrollPhysics(),
-      gridDelegate:  SliverGridDelegateWithFixedCrossAxisCount(
-          crossAxisCount: Responsive.isMobile(context)? 1: 3,
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: Responsive.isMobile(context) ? 1 : 3,
           crossAxisSpacing: 15,
           mainAxisSpacing: 12,
           childAspectRatio: 5 / 4),
@@ -94,4 +94,6 @@ class BarGraphCart extends StatelessWidget {
             ]))
         .toList();
   }
+
+  /// push
 }
